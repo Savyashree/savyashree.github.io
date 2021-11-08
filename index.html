@@ -6,11 +6,9 @@
 <style>
 body, html {
   height: 100%;
-  margin: 0;
-   paddingTop: `env(safe-area-inset-top)`;
-     paddingBottom: `env(safe-area-inset-bottom)`;
-        paddingLeft: `env(safe-area-inset-left)`;
-        paddingRight: `env(safe-area-inset-right)`;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  
+  
 }
 
 .bg {
@@ -30,7 +28,7 @@ body, html {
 <body>
  <div class="bg"> </div> 
  
-  <p>This example creates a full page background image with style. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+  <p>This example creates a full page background image with padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
 
 
 
