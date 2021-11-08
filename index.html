@@ -28,7 +28,21 @@ body, html {
 </style>
 </head>
 <body>
+  <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+  <script>
+    var elem = document.documentElement;
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
  <div class="bg"> </div> 
+  
  
   <p>This example creates a full page background image with margin: 0;
  padding-left: max(12px, env(safe-area-inset-left));
