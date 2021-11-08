@@ -6,7 +6,9 @@
 <style>
 body, html {
   height: 100%;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: 12px;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   
   
 }
@@ -28,7 +30,9 @@ body, html {
 <body>
  <div class="bg"> </div> 
  
-  <p>This example creates a full page background image with padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+  <p>This example creates a full page background image with padding: 12px;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
 
 
 
